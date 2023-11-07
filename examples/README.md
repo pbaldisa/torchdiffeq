@@ -22,6 +22,7 @@ We can use an adaptive ODE solver to approximate our continuous-depth network wh
 ```
 python odenet_mnist.py --network odenet
 ```
+
 However, the memory requirements for this will blow up very fast, especially for more complex problems where the number of function evaluations can reach nearly a thousand.
 
 For applications that require solving complex trajectories, we recommend using the adjoint method.
